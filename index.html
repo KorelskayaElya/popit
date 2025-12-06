@@ -1,56 +1,63 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <title>Pop it</title>
-    <link rel="stylesheet" href="style.css"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <link rel="stylesheet" href="css/style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div class="page">
-        <div class="top">
-            <div class="brand">НЕ_ПУПЫРКА.РУ</div>
-            <div class="menu">
-                <a>О НАС</a>
-                <a>СПИСКИ</a>
-                <a>КОНТАКТЫ</a>
-            </div>
-        </div>
+        <header class="header">
+            <div class="header__brand">НЕ_ПУПЫРКА.РУ</div>
+            <nav class="header__menu">
+                <a class="menu__link" href="#about">О НАС</a>
+                <a class="menu__link" href="#catalog">СПИСКИ</a>
+                <a class="menu__link" href="#contacts">КОНТАКТЫ</a>
+            </nav>
+        </header>
+        <main>
         <section class="hero">
-            <div class="hero-inner">
-                <div class="hero-left">
-                    <h1 class="hero-title">POP IT!</h1>
-                    <p class="hero-description">Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!</p>
-                    <a class="btn" href="#">Купить</a>
+            <div class="hero__inner">
+                <div class="hero__left">
+                    <h1 class="hero__title">POP IT!</h1>
+                    <p class="hero__description">Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!</p>
+                    <button class="hero__btn">Купить</button>
                 </div>
             </div>
         </section>    
-        <section class="about">
+
+        <section class="about" id="about">
             <h2>Что такое Pop it?</h2>
             <p>Pop it дословно переводится как "лопни это". Это детская игра, процесс в которой можно сравнить с лопанием воздушно-пузырчатой упаковочной пленки. 
                 Но в отличие от пленки поп-иты можно давить с характерными ощущениями и звуками "бесконечно": десятки силиконовых пузырей просто выдавливаются в другую сторону.</p>
         </section>
-        <section class="catalog">
+
+        <section class="catalog" id="catalog">
             <h3>Выбери свой Pop it!</h3>
-            <div class="catalog-items">
-                <div class="item">
-                    <img src="images/square.png" alt="">
-                    <p>Разноцветный квадратный</p>
-                    <a class="item-btn" href="#">КУПИТЬ</a>
+            <div class="catalog__items">
+                <div class="catalog__item">
+                    <img class="catalog__img" src="images/square.png" alt="">
+                    <p class="catalog__name">Разноцветный квадратный</p>
+                    <a class="catalog__btn" href="#">КУПИТЬ</a>
                 </div>
-                <div class="item">
-                    <img src="images/amongus.png" alt="">
-                    <p>Among Us, мраморный</p>
-                    <a class="item-btn" href="#">КУПИТЬ</a>
+                <div class="catalog__item">
+                    <img class="catalog__img" src="images/amongus.png" alt="">
+                    <p class="catalog__name">Among Us, мраморный</p>
+                    <a class="catalog__btn" href="#">КУПИТЬ</a>
                 </div>
-                <div class="item">
-                    <img src="images/round.png" alt="">
-                    <p>Разноцветный круглый</p>
-                    <a class="item-btn" href="#">КУПИТЬ</a>
+                <div class="catalog__item">
+                    <img class="catalog__img" src="images/round.png" alt="">
+                    <p class="catalog__name">Разноцветный круглый</p>
+                    <a class="catalog__btn" href="#">КУПИТЬ</a>
                 </div>
             </div>
         </section>
+
         <section class="rules">
-            <div class="rules-left">
+            <div class="rules__left">
                 <h3>Правила игры</h3>
                 <p>
                     Игроки ходят по очереди и нажимают на пупырки. Нужно обязательно 
@@ -60,12 +67,13 @@
                     чтобы соперник сходил последним. Кто ходил последним - тот проиграл!
                 </p>
             </div>
-            <div class="rules-right">
-                <img src="images/photo.jpg" class="rules-photo" alt="">
+            <div class="rules__right">
+                <img src="images/photo.jpg" class="rules__photo" alt="">
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer-inner">
+        </main>
+        <footer class="footer" id="contacts">
+            <div class="footer__inner">
                 <span>НЕ_ПУПЫРКА</span>
                 <span>Способы оплаты</span>
                 <span>Доставка</span>
@@ -75,3 +83,4 @@
         </footer>
     </div>
 </body>
+</html>
